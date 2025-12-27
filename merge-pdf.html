@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge PDF Online - Combine PDF Files Free | UltimateTools</title>
+    <meta name="description" content="Merge PDF files online for free. Combine multiple PDFs into one document. No watermarks, no registration.">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_AD_CODE" crossorigin="anonymous"></script>
+    <style>
+        :root { --primary: #4CAF50; --secondary: #45a049; --accent: #2E7D32; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .header { background: white; padding: 15px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .logo { font-size: 24px; color: var(--primary); font-weight: bold; text-decoration: none; }
+        .tool-container { background: white; padding: 30px; border-radius: 15px; margin-top: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+        .upload-area { border: 3px dashed #ddd; padding: 60px; text-align: center; border-radius: 10px; cursor: pointer; margin: 20px 0; }
+        .upload-area:hover { border-color: var(--primary); }
+        .btn { background: var(--primary); color: white; padding: 15px 30px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; }
+        .btn:hover { background: var(--secondary); }
+        .file-list { margin: 20px 0; }
+        .file-item { background: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 10px; display: flex; justify-content: space-between; }
+        .sidebar { background: white; padding: 20px; border-radius: 15px; }
+        .related-tools a { display: block; padding: 10px; color: #333; text-decoration: none; border-bottom: 1px solid #eee; }
+        .related-tools a:hover { color: var(--primary); }
+        .ad-box { background: #f8f8f8; padding: 20px; text-align: center; border-radius: 10px; margin: 20px 0; }
+        @media (max-width: 768px) { .main-grid { grid-template-columns: 1fr; } }
+        .main-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <a href="index.html" class="logo">📄 UltimateTools</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-grid">
+            <div>
+                <div class="tool-container">
+                    <h1>📑 Merge PDF Files Online</h1>
+                    <p>Combine multiple PDF documents into one file. Drag & drop supported.</p>
+                    
+                    <div class="ad-box">
+                        <!-- AdSense -->
+                        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-YOUR_AD_CODE" data-ad-slot="7890123456"></ins>
+                        <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+                    </div>
+
+                    <div class="upload-area" id="dropArea">
+                        <h3>📤 Drop PDF files here</h3>
+                        <p>or click to select files</p>
+                        <input type="file" id="fileInput" multiple accept=".pdf" hidden>
+                    </div>
+
+                    <div class="file-list" id="fileList"></div>
+
+                    <div style="text-align: center; margin: 30px 0;">
+                        <button class="btn" id="mergeBtn">🔗 Merge PDF Files</button>
+                    </div>
+
+                    <div class="ad-box">
+                        <!-- AdSense -->
+                        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-YOUR_AD_CODE" data-ad-slot="7890123457"></ins>
+                        <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="related-tools">
+                    <h3>🔗 Related Tools</h3>
+                    <a href="compress-pdf.html">📊 Compress PDF</a>
+                    <a href="split-pdf.html">✂️ Split PDF</a>
+                    <a href="pdf-to-word.html">📝 PDF to Word</a>
+                    <a href="word-to-pdf.html">📄 Word to PDF</a>
+                    <a href="compress-image.html">🖼️ Compress Image</a>
+                    <a href="compress-video.html">🎥 Compress Video</a>
+                </div>
+                
+                <div class="ad-box">
+                    <!-- AdSense -->
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-YOUR_AD_CODE" data-ad-slot="7890123458"></ins>
+                    <script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('dropArea').addEventListener('click', () => document.getElementById('fileInput').click());
+        document.getElementById('fileInput').addEventListener('change', handleFiles);
+        
+        function handleFiles(e) {
+            const files = e.target.files;
+            const fileList = document.getElementById('fileList');
+            fileList.innerHTML = '';
+            
+            for(let file of files) {
+                const div = document.createElement('div');
+                div.className = 'file-item';
+                div.innerHTML = `
+                    <span>${file.name} (${(file.size/1024/1024).toFixed(2)} MB)</span>
+                    <button onclick="this.parentElement.remove()">❌</button>
+                `;
+                fileList.appendChild(div);
+            }
+        }
+        
+        document.getElementById('mergeBtn').addEventListener('click', () => {
+            alert('Merging PDF files...\nIn real tool, this would merge PDFs.');
+        });
+        
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</body>
+  </html>
